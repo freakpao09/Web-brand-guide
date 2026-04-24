@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SEJ Brand Guide — Logo</title>
+<link rel="stylesheet" href="styles/colors_and_type.css" />
+<link rel="stylesheet" href="styles/site.css" />
+</head>
+<body>
+<div class="app">
+  <div id="sidebar-mount"></div>
+  <main class="main">
+    <header class="page-head">
+      <span class="eyebrow">Identity</span>
+      <h1>Logo</h1>
+      <p>Our wordmark has carried SEJ's reporting since 2003. The signature green "J" is the mark's voice — protect its clear space, respect its colorways, and never redraw it.</p>
+    </header>
+
+    <section class="stack-10">
+      <div>
+        <div class="section-label">Primary mark</div>
+        <div class="card-grid cols-2">
+          <div class="logo-display">
+            <img src="assets/logos/primary-black.png" alt="SEJ primary logo, stacked" />
+            <div class="caption">Stacked · on light</div>
+          </div>
+          <div class="logo-display dark">
+            <img src="assets/logos/primary-white.png" alt="SEJ primary logo, stacked, reversed" />
+            <div class="caption">Stacked · reversed on dark</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Secondary mark</div>
+        <div class="card-grid cols-2">
+          <div class="logo-display">
+            <img src="assets/logos/secondary-black.png" alt="SEJ secondary horizontal logo" style="max-height:60px" />
+            <div class="caption">Horizontal · on light · web headers, email</div>
+          </div>
+          <div class="logo-display dark">
+            <img src="assets/logos/secondary-white.png" alt="SEJ secondary horizontal logo, reversed" style="max-height:60px" />
+            <div class="caption">Horizontal · reversed · dark hero units</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Icon mark</div>
+        <div class="card-grid cols-2">
+          <div class="logo-display">
+            <img src="assets/logos/icon-black.png" alt="SEJ icon" style="max-height:72px" />
+            <div class="caption">Icon · favicons, avatars, app icons ≤ 64px</div>
+          </div>
+          <div class="logo-display dark">
+            <img src="assets/logos/icon-white.png" alt="SEJ icon, white" style="max-height:72px" />
+            <div class="caption">Icon · reversed</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Clear space</div>
+        <div class="clearspace">
+          <div class="clearspace-box">
+            <img src="assets/logos/secondary-black.png" alt="" />
+          </div>
+          <div class="caption">Maintain minimum clear space equal to the height of the "S" on all sides. Never let other elements enter this zone.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Minimum size</div>
+        <div class="card">
+          <div style="display:flex;gap:64px;align-items:flex-end;justify-content:center;padding:24px 0;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+              <img src="assets/logos/icon-black.png" style="height:24px" alt="" />
+              <div style="font-size:12px;color:var(--fg-3);font-family:ui-monospace,Menlo,monospace">Digital · 120px wide min.</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+              <img src="assets/logos/icon-black.png" style="height:32px" alt="" />
+              <div style="font-size:12px;color:var(--fg-3);font-family:ui-monospace,Menlo,monospace">Print · 0.75 inch wide min.</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+              <img src="assets/logos/icon-black.png" style="height:40px" alt="" />
+              <div style="font-size:12px;color:var(--fg-3);font-family:ui-monospace,Menlo,monospace">Icon · 24px min.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Usage</div>
+        <div class="dodont">
+          <div class="dodont-card do">
+            <div class="dodont-head">
+              <div class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <h4>Do</h4>
+            </div>
+            <ul>
+              <li>Use approved logo files from <code>/assets/logos/</code> only.</li>
+              <li>Maintain clear space equal to the "S" height on every side.</li>
+              <li>Place on solid backgrounds — white, paper, ink, or forest-deep.</li>
+              <li>Use the icon mark only when space is constrained (≤ 64px).</li>
+              <li>Scale proportionally — never stretch width or height alone.</li>
+            </ul>
+          </div>
+          <div class="dodont-card dont">
+            <div class="dodont-head">
+              <div class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+              <h4>Don't</h4>
+            </div>
+            <ul>
+              <li>Recolor the mark — the "J" is always SEJ green.</li>
+              <li>Distort, stretch, rotate, or add effects like drop shadows.</li>
+              <li>Place over busy photography or low-contrast backgrounds.</li>
+              <li>Recreate or redraw the wordmark.</li>
+              <li>Set beside other logos without spacing equal to the "S" height.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="copied-toast" class="copied"></div>
+<script src="partials.js"></script>
+<script>mountSidebar('logo');</script>
+</body>
+</html>

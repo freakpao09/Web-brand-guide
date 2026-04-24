@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SEJ Brand Guide — Components</title>
+<link rel="stylesheet" href="styles/colors_and_type.css" />
+<link rel="stylesheet" href="styles/site.css" />
+</head>
+<body>
+<div class="app">
+  <div id="sidebar-mount"></div>
+  <main class="main">
+    <header class="page-head">
+      <span class="eyebrow">Patterns</span>
+      <h1>Components</h1>
+      <p>The reusable building blocks that keep SEJ surfaces consistent across the editorial site, the newsletter, and the media kit. Small radii, hairline borders, restrained elevation.</p>
+    </header>
+
+    <section class="stack-10">
+      <div>
+        <div class="section-label">Buttons</div>
+        <div class="comp-block">
+          <h4>Variants</h4>
+          <div class="comp-row">
+            <button class="btn btn-primary">Subscribe</button>
+            <button class="btn btn-dark">Read the Article</button>
+            <button class="btn btn-outline">Learn More</button>
+            <button class="btn btn-ghost">Cancel</button>
+          </div>
+          <h4>Sizes</h4>
+          <div class="comp-row">
+            <button class="btn btn-primary btn-sm">Small</button>
+            <button class="btn btn-primary">Default</button>
+            <button class="btn btn-primary btn-lg">Large</button>
+          </div>
+          <h4>States</h4>
+          <div class="comp-row">
+            <button class="btn btn-primary">Default</button>
+            <button class="btn btn-primary" style="background:#4fb821">Hover</button>
+            <button class="btn btn-primary" disabled>Disabled</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Forms</div>
+        <div class="comp-block">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+            <div>
+              <label class="label">Email</label>
+              <input class="input" type="email" placeholder="you@agency.com" />
+              <div class="help">We'll send SEJ Today every weekday.</div>
+            </div>
+            <div>
+              <label class="label">Role</label>
+              <input class="input" value="Senior SEO Manager" />
+            </div>
+            <div class="check-row">
+              <input type="checkbox" id="tos" checked />
+              <label for="tos">I agree to receive editorial updates</label>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+              <span style="font-size:14px">Enable weekly roundup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Badges &amp; tags</div>
+        <div class="comp-block">
+          <div class="comp-row">
+            <span class="badge badge-dark">Ask an SEO</span>
+            <span class="badge badge-green">New</span>
+            <span class="badge badge-outline">PPC Pulse</span>
+            <span class="badge badge-soft">Featured</span>
+            <span class="badge badge-red">Sponsored</span>
+          </div>
+          <div class="comp-row">
+            <span style="display:inline-block;padding:5px 14px;border-radius:999px;background:var(--sej-forest-deep);color:var(--sej-white);font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase">AI Search</span>
+            <span style="display:inline-block;padding:5px 14px;border-radius:999px;background:var(--sej-green-10);color:#1a6b0a;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase">Webinar</span>
+            <span style="display:inline-block;padding:5px 14px;border-radius:999px;background:var(--sej-paper);color:var(--sej-ink);font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase">Enterprise SEO</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Progress &amp; sliders</div>
+        <div class="comp-block">
+          <div style="max-width:520px">
+            <div style="font-size:13px;color:var(--fg-2);margin-bottom:8px">Article read progress</div>
+            <div class="progress"><div class="progress-bar" style="width:64%"></div></div>
+            <div style="height:24px"></div>
+            <div style="font-size:13px;color:var(--fg-2);margin-bottom:8px">Filter by recency</div>
+            <div class="slider-row">
+              <input type="range" min="0" max="100" value="60" />
+              <span style="font-size:13px;color:var(--fg-3);font-family:ui-monospace,Menlo,monospace;min-width:40px;text-align:right">60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Cards</div>
+        <div class="card-grid cols-3">
+          <div class="ex-card">
+            <div class="ex-card-img">AI SEARCH</div>
+            <div class="ex-card-body">
+              <div class="eyebrow" style="color:var(--fg-accent);font-size:11px">Analysis</div>
+              <h5>Why Great Content Is No Longer Enough &amp; What Beats It In AI Search</h5>
+              <p>68M AI crawler visits reveal the new patterns winning discovery.</p>
+            </div>
+          </div>
+          <div class="ex-card">
+            <div class="ex-card-img" style="background:linear-gradient(135deg,#229850,#11342b)">PPC PULSE</div>
+            <div class="ex-card-body">
+              <div class="eyebrow" style="color:var(--fg-accent);font-size:11px">Column</div>
+              <h5>Should You Use Auto-Generated Creative? Here's When It Works.</h5>
+              <p>The PPC Pulse tests Performance Max against manual creative.</p>
+            </div>
+          </div>
+          <div class="ex-card">
+            <div class="ex-card-img" style="background:linear-gradient(135deg,#0b1612,#11342b)">WEBINAR</div>
+            <div class="ex-card-body">
+              <div class="eyebrow" style="color:var(--fg-accent);font-size:11px">Live · May 14</div>
+              <h5>Reporting Uncertainty Without Losing Credibility</h5>
+              <p>A live panel on communicating algorithm shifts to executives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Spacing · 8pt base</div>
+        <div class="card">
+          <div class="spacing-row"><div class="spacing-name">--space-1</div><div class="spacing-visual"><div class="spacing-bar" style="width:4px"></div><div class="spacing-value">4px · tight pairs</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-2</div><div class="spacing-visual"><div class="spacing-bar" style="width:8px"></div><div class="spacing-value">8px · inline gaps</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-3</div><div class="spacing-visual"><div class="spacing-bar" style="width:12px"></div><div class="spacing-value">12px · related rows</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-4</div><div class="spacing-visual"><div class="spacing-bar" style="width:16px"></div><div class="spacing-value">16px · default rhythm</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-5</div><div class="spacing-visual"><div class="spacing-bar" style="width:24px"></div><div class="spacing-value">24px · card padding</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-6</div><div class="spacing-visual"><div class="spacing-bar" style="width:32px"></div><div class="spacing-value">32px · section internal</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-7</div><div class="spacing-visual"><div class="spacing-bar" style="width:48px"></div><div class="spacing-value">48px · section break</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-8</div><div class="spacing-visual"><div class="spacing-bar" style="width:64px"></div><div class="spacing-value">64px · major section</div></div></div>
+          <div class="spacing-row"><div class="spacing-name">--space-9</div><div class="spacing-visual"><div class="spacing-bar" style="width:96px"></div><div class="spacing-value">96px · page-level</div></div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Grid · 12 columns</div>
+        <div class="card">
+          <div class="grid12">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+          </div>
+          <div style="height:24px"></div>
+          <div class="bp-table">
+            <div><span class="bp-name">mobile</span><span class="bp-desc">Single column, stacked meta</span><span class="bp-range">&lt; 640px</span></div>
+            <div><span class="bp-name">tablet</span><span class="bp-desc">8-col grid, condensed header</span><span class="bp-range">640–1024px</span></div>
+            <div><span class="bp-name">desktop</span><span class="bp-desc">12-col grid, full nav, 1240px container</span><span class="bp-range">1024–1280px</span></div>
+            <div><span class="bp-name">wide</span><span class="bp-desc">Desktop + wider image gutters</span><span class="bp-range">&gt; 1280px</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="copied-toast" class="copied"></div>
+<script src="partials.js"></script>
+<script>mountSidebar('components');</script>
+</body>
+</html>
