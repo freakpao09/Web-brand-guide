@@ -30,8 +30,13 @@ function renderSidebar(activeId) {
 
   return `
     <aside class="sidebar">
-      <div class="sidebar-brand">
-        <img src="assets/logos/primary-black.png" alt="Search Engine Journal" />
+      <div class="sidebar-top">
+        <div class="sidebar-brand">
+          <img src="assets/logos/primary-black.png" alt="Search Engine Journal" />
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" onclick="this.closest('.sidebar').classList.toggle('is-open')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
       <nav class="nav">
         <div class="nav-section">Brand Guide</div>

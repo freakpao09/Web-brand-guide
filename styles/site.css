@@ -930,3 +930,137 @@ h2.section-h {
   z-index: 100;
 }
 .copied.show { opacity: 1; }
+
+/* ========== Responsive ========== */
+
+/* Mobile nav toggle — hidden by default, shown on mobile */
+.mobile-nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-1);
+  background: var(--sej-white);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--fg-1);
+  flex-shrink: 0;
+  padding: 0;
+}
+.mobile-nav-toggle svg { width: 20px; height: 20px; stroke-width: 2; }
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .app { grid-template-columns: 240px 1fr; }
+  .sidebar { padding: 24px 16px; }
+  .main { padding: 48px 32px 80px; }
+  .page-head h1 { font-size: 44px; }
+  .card-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+  .icon-grid { grid-template-columns: repeat(6, 1fr); }
+  .principles { padding: 32px; }
+  .grammar { padding: 28px; gap: 28px; }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .app { grid-template-columns: 1fr; }
+
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: auto;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border-1);
+    z-index: 50;
+    background: var(--sej-white);
+    flex-direction: column;
+  }
+  .sidebar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+    width: 100%;
+  }
+  .sidebar-brand {
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 0;
+  }
+  .sidebar-brand img { max-height: 28px; max-width: 140px; }
+  .mobile-nav-toggle { display: flex; }
+
+  .nav, .sidebar-footer { display: none; }
+
+  .sidebar.is-open { height: 100vh; overflow-y: auto; }
+  .sidebar.is-open .sidebar-top { border-bottom: 1px solid var(--border-1); }
+  .sidebar.is-open .nav { display: flex; padding: 8px 12px; }
+  .sidebar.is-open .sidebar-footer { display: block; margin: 16px; }
+
+  .main { padding: 84px 20px 64px; max-width: none; }
+
+  .page-head { margin-bottom: 32px; }
+  .page-head h1 { font-size: 36px; line-height: 1.1; }
+  .page-head p { font-size: 16px; }
+
+  .card-grid.cols-2,
+  .card-grid.cols-3,
+  .card-grid.cols-4 { grid-template-columns: 1fr; }
+
+  .principles { padding: 28px 20px; }
+  .principles h2 { font-size: 26px; margin-bottom: 20px; }
+  .principle-grid { grid-template-columns: 1fr; gap: 24px; }
+
+  .dodont { grid-template-columns: 1fr; }
+  .grammar { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
+
+  .icon-grid { grid-template-columns: repeat(4, 1fr); }
+  .icon-sizes { flex-wrap: wrap; gap: 24px; padding: 20px; justify-content: flex-start; }
+
+  .stat-value { font-size: 36px !important; }
+
+  .logo-display { padding: 32px 20px; min-height: auto; }
+  .clearspace-box { padding: 32px 16px; }
+
+  .type-family { padding: 22px; }
+  .type-family-name { font-size: 28px; }
+  .type-row { grid-template-columns: 1fr; gap: 6px; padding: 18px 20px; }
+  .type-row-spec { text-align: left; }
+  .type-row-sample[style*="font-size:80px"],
+  .type-row-sample[style*="font-size:60px"],
+  .type-row-sample[style*="font-size:48px"] { font-size: 36px !important; }
+  .type-row-sample[style*="font-size:36px"] { font-size: 28px !important; }
+  .type-row-sample[style*="font-size:28px"] { font-size: 22px !important; }
+
+  .comp-block { padding: 22px; }
+  .grid12 { grid-template-columns: repeat(6, 1fr); }
+  .bp-table div { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
+
+  .dl-hero { flex-direction: column; align-items: flex-start; padding: 24px; gap: 16px; }
+  .dl-hero-meta { margin-left: 0 !important; display: block; margin-top: 8px; }
+  .dl-row { flex-wrap: wrap; padding: 14px 16px; }
+  .dl-row-body { min-width: 0; flex: 1 1 60%; }
+
+  .stack-10 > * + * { margin-top: 32px; }
+  .stack-8 > * + * { margin-top: 24px; }
+
+  .tone { padding: 22px; }
+  .tone-example { padding: 16px 18px; font-size: 15px; }
+}
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+  .main { padding: 80px 16px 48px; }
+  .page-head h1 { font-size: 30px; letter-spacing: -0.02em; }
+  .page-head p { font-size: 15px; }
+  .icon-grid { grid-template-columns: repeat(3, 1fr); }
+  .stat-value { font-size: 32px !important; }
+  .grid12 { grid-template-columns: repeat(4, 1fr); }
+  .principles h2 { font-size: 24px; }
+  .clearspace-box { padding: 24px 12px; }
+}
