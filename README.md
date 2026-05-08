@@ -1,25 +1,30 @@
-# CODING AGENTS: READ THIS FIRST
+# SEJ Brand Guide
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+An interactive brand guide website for **Search Engine Journal**, built from the SEJ Design System.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+## Pages
 
-## What you should do — IMPORTANT
+- **Overview** (`index.html`) — hero, jump-in cards, brand principles, key stats
+- **Logo** (`logo.html`) — primary, secondary, and icon marks with usage rules
+- **Colors** (`colors.html`) — full palette with click-to-copy hex values
+- **Typography** (`typography.html`) — Inter + Lora families and full type scale
+- **Icons** (`icons.html`) — Lucide icon library at 1.75 stroke
+- **Components** (`components.html`) — buttons, forms, badges, cards, spacing, grid
+- **Voice & Tone** (`voice.html`) — voice characteristics, headline patterns, tone by surface
+- **Downloads** (`downloads.html`) — asset packages, fonts, and documentation
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+## Stack
 
-**Read `project/index.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+Static HTML, CSS, and a small JS partial for the shared sidebar. No build step. Inter and Lora are loaded from Google Fonts.
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+## Run locally
 
-## About the design files
+```bash
+python3 -m http.server 3000
+```
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+Open http://localhost:3000
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Deploy
 
-## Bundle contents
-
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Brand Guide` project files (HTML prototypes, assets, components)
+Enable **GitHub Pages** in the repo settings (Settings → Pages → Branch: `main`) for a live URL.
